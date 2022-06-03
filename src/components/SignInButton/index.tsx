@@ -4,7 +4,7 @@ import { FaGithub } from 'react-icons/fa'
 import { FiX } from 'react-icons/fi'
 
 export function SignInButton() {
-  const isUserLoggedIn = false
+  const isUserLoggedIn = true
 
   return isUserLoggedIn ? (
     <button className={styles.signInButton} type="button">
