@@ -27,7 +27,7 @@ export default NextAuth({
                   query.Casefold(user.email)
                 )
               )
-            ),                                                                                      
+            ),
             query.Create(query.Collection('users'), { data: { email } }),
             query.Get(
               query.Match(
