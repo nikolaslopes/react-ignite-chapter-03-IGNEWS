@@ -10,7 +10,7 @@ export default function Posts() {
 
       <main className={styles.container}>
         <div className={styles.posts}>
-          <a href="">
+          <a href="#">
             <time>12 de março de 2021</time>
             <strong>Lorem ipsum dolor sit ame.</strong>
             <p>
@@ -21,7 +21,7 @@ export default function Posts() {
             </p>
           </a>
 
-          <a href="">
+          <a href="#">
             <time>12 de março de 2021</time>
             <strong>Lorem ipsum dolor sit ame.</strong>
             <p>
@@ -32,7 +32,7 @@ export default function Posts() {
             </p>
           </a>
 
-          <a href="">
+          <a href="#">
             <time>12 de março de 2021</time>
             <strong>Lorem ipsum dolor sit ame.</strong>
             <p>
