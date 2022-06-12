@@ -3,7 +3,6 @@ import { ActiveLink } from '../ActiveLink'
 import styles from './styles.module.scss'
 
 export function Header() {
-  console.log('styles', styles.active)
   return (
     <header className={styles.headerContainer}>
       <div className={styles.headerContent}>
