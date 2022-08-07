@@ -6,8 +6,6 @@ import { FiX } from 'react-icons/fi'
 export function SignInButton() {
   const { data: session } = useSession()
 
-  console.log('session', session)
-
   return session ? (
     <button
       type="button"
