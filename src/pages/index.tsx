@@ -6,7 +6,6 @@ import { stripe } from '../services/stripe'
 
 interface IHome {
   product: {
-    priceId: string
     amount: number
   }
 }
@@ -28,7 +27,7 @@ export default function Home({ product }: IHome) {
             Get access to all publications <br />
             <span>for {product.amount} month</span>
           </p>
-          <SubscribeButton priceId={product.priceId} />
+          <SubscribeButton />
         </section>
 
         <img src="/images/avatar.svg" alt="Girl Coding" />
