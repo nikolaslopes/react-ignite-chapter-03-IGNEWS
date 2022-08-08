@@ -10,6 +10,11 @@ export default NextAuth({
     GitHubProvider({
       clientId: process.env.GITHUB_CLIENT_ID,
       clientSecret: process.env.GITHUB_CLIENT_SECRET,
+      authorization: {
+        params: {
+          scope: 'read:user',
+        },
+      },
     }),
   ],
 
@@ -49,6 +54,7 @@ export default NextAuth({
         }
       }
     },
+
     async signIn({ user, account, profile }) {
       const { email } = user
 
@@ -70,4 +76,5 @@ export default NextAuth({
       }
     },
   },
+  secret: process.env.JWT_SECRET,
 })
